@@ -40,7 +40,7 @@ const wagmiClient = createClient({
 	autoConnect: true,
 	connectors,
 	provider,
-	projectId: '954f4201d1e2a18bc4ee22a73b53c216',
+	projectId: process.env.WALLETCONNECT_PROJECTID,
   });
 
 export { WagmiConfig, RainbowKitProvider };
